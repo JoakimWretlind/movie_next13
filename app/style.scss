@@ -1,0 +1,29 @@
+@import "./globalStyle.scss";
+
+.pageContainer {
+  height: 100%;
+  width: 100%;
+  max-width: 190rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+.appHeader {
+  text-transform: uppercase;
+  margin: 4rem 0 2rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(3rem, 4vw, 8rem);
+  line-height: 0.8;
+}
+
+.movie-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 3rem;
+}
